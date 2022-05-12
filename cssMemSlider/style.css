@@ -2,30 +2,28 @@ body {
 	margin: 0;
 	padding: 0;
 }
-
 img{
-	width: 800px;
-	height: 532px;
-	border-radius: 10px;
+	width: 100%;
+	height: auto;
+	border-radius: 0.625rem;
 }
 p{
 	color: #fff;
-	padding-top: 20px;
+	padding-top: 1.25rem;
+	font-size: 1.25rem;
 }
 .carousel-items, .carousel-labels {
-	margin: 0;
+	margin: 0 auto;
 	padding: 0;
 	list-style: none;
 	display: block;
 }
-
 .carousel-wrapper {
-	width: 800px;
-	padding-bottom: 30%;
+    width: 60%;
 	background-color: #000;
 	overflow: hidden;
 	margin: 0 auto;
-	padding: 40px;
+	padding: 2rem 3rem;
 }
 .carousel-items {
 	overflow: hidden;
@@ -34,12 +32,13 @@ p{
 .carousel-items .slide2,
 .carousel-items .slide3{
 	display: none;
+	width: 100%;
 }
 .carousel-labels {
-	height: 20px;
-	padding: 10px 0;
+	height: 1.25rem;
+	padding: 0.625rem 0;
 	text-align: right;
-    margin-top: -62px;
+    margin-top: -3.875rem;
 }
 .carousel-selector {
 	display: none;
@@ -48,16 +47,16 @@ p{
 	display: inline-block;
 }
 .carousel-label label{
-	padding: 15px;
+	padding: 0.5rem;;
 	display: block;
 }
 .carousel-label label span{
 	display: block;
-	width: 10px;
-	height: 10px;
-	border-radius: 10px;
+	width: 0.625rem;
+	height: 0.625rem;
+	border-radius: 0.625rem;
 	background-color: #4d7edd;
-	border: 3px solid #4d7edd;
+	border: 0.1875rem solid #4d7edd;
 	display: block;
 	cursor: pointer;
 }
@@ -122,3 +121,5 @@ p{
 0% {transform: translate(10%);}
 100% {transform: translate(0);}
 }
+
+
