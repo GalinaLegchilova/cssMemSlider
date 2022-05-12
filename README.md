@@ -1,1 +1,1 @@
-https://galinalegchilova-JSFE2022Q1.github.io/cssMemSlider/cssMemSlider/index.html
+https://galinalegchilova.github.io/cssMemSlider/cssMemSlider/index.html
