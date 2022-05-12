@@ -28,9 +28,7 @@ p{
 .carousel-items {
 	overflow: hidden;
 }
-.carousel-items .slide1,
-.carousel-items .slide2,
-.carousel-items .slide3{
+.carousel-items .slide{
 	display: none;
 	width: 100%;
 }
@@ -103,6 +101,34 @@ p{
 	background-color: #000;
 	border-color: #fff;
 }
+#slide4:checked ~ .carousel-items>div{
+	animation: tr4 1s linear;
+}
+#slide4:checked ~ .carousel-items .slide4 {
+	display: inline-block;
+}
+#slide4:checked ~ .carousel-labels .carousel-label:nth-child(4) label span{
+	background-color: #000;
+	border-color: #4d7edd;
+}
+#slide4:checked ~ .carousel-labels .carousel-label:nth-child(4) label:hover span{
+	background-color: #000;
+	border-color: #fff;
+}
+#slide5:checked ~ .carousel-items>div{
+	animation: tr5 1s linear;
+}
+#slide5:checked ~ .carousel-items .slide5 {
+	display: inline-block;
+}
+#slide5:checked ~ .carousel-labels .carousel-label:nth-child(5) label span{
+	background-color: #000;
+	border-color: #4d7edd;
+}
+#slide5:checked ~ .carousel-labels .carousel-label:nth-child(5) label:hover span{
+	background-color: #000;
+	border-color: #fff;
+}
 .carousel-label label:hover span{
 	background-color: #fff;
 	border-color: #fff;
@@ -121,5 +147,29 @@ p{
 0% {transform: translate(10%);}
 100% {transform: translate(0);}
 }
+@keyframes tr4{
+0% {transform: translate(10%);}
+100% {transform: translate(0);}
+}
+@keyframes tr5{
+0% {transform: translate(10%);}
+100% {transform: translate(0);}
+}
 
-
+@media screen and (max-width: 900px) {
+	.carousel-wrapper {
+		width: 100%;
+		box-sizing: border-box;
+	}
+	img{
+		width: 100%;
+		height: auto;
+	}
+	.carousel-labels{
+		text-align: center;
+		margin: -6.875rem 0 6.25rem 0;
+	}
+	p{
+		padding-top: 4.375rem;
+	}
+}
