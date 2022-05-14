@@ -28,9 +28,11 @@ p{
 .carousel-items {
 	overflow: hidden;
 }
+.carousel-items>div{
+	display: flex;
+} 
 .carousel-items .slide{
-	display: none;
-	width: 100%;
+	width: 0;
 }
 .carousel-labels {
 	height: 1.25rem;
@@ -45,8 +47,9 @@ p{
 	display: inline-block;
 }
 .carousel-label label{
-	padding: 0.5rem;;
+	padding: 0.5rem;
 	display: block;
+	cursor: pointer;
 }
 .carousel-label label span{
 	display: block;
@@ -63,7 +66,8 @@ p{
 	animation: tr1 1s linear;
 }
 #slide1:checked ~ .carousel-items .slide1 {
-	display: inline-block;
+	order: 1;
+    width: 100%;
 }
 #slide1:checked ~ .carousel-labels .carousel-label:nth-child(1) label span{
 	background-color: #000;
@@ -77,7 +81,8 @@ p{
 	animation: tr2 1s linear;
 }
 #slide2:checked ~ .carousel-items .slide2 {
-	display: inline-block;
+	order: 1;
+    width: 100%;
 }
 #slide2:checked ~ .carousel-labels .carousel-label:nth-child(2) label span{
 	background-color: #000;
@@ -91,7 +96,8 @@ p{
 	animation: tr3 1s linear;
 }
 #slide3:checked ~ .carousel-items .slide3 {
-	display: inline-block;
+	order: 1;
+    width: 100%;
 }
 #slide3:checked ~ .carousel-labels .carousel-label:nth-child(3) label span{
 	background-color: #000;
@@ -105,7 +111,8 @@ p{
 	animation: tr4 1s linear;
 }
 #slide4:checked ~ .carousel-items .slide4 {
-	display: inline-block;
+	order: 1;
+    width: 100%;
 }
 #slide4:checked ~ .carousel-labels .carousel-label:nth-child(4) label span{
 	background-color: #000;
@@ -119,7 +126,8 @@ p{
 	animation: tr5 1s linear;
 }
 #slide5:checked ~ .carousel-items .slide5 {
-	display: inline-block;
+	order: 1;
+    width: 100%;
 }
 #slide5:checked ~ .carousel-labels .carousel-label:nth-child(5) label span{
 	background-color: #000;
