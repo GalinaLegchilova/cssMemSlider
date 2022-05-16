@@ -8,7 +8,6 @@ img{
 	border-radius: 0.625rem;
 }
 p{
-	color: #fff;
 	padding-top: 1.25rem;
 	font-size: 1.25rem;
 }
@@ -33,12 +32,13 @@ p{
 } 
 .carousel-items .slide{
 	width: 0;
+	color: transparent;
 }
 .carousel-labels {
 	height: 1.25rem;
 	padding: 0.625rem 0;
 	text-align: right;
-    margin-top: -3.875rem;
+    margin-top: -3.75rem;
 }
 .carousel-selector {
 	display: none;
@@ -68,6 +68,7 @@ p{
 #slide1:checked ~ .carousel-items .slide1 {
 	order: 1;
     width: 100%;
+	color: #fff;
 }
 #slide1:checked ~ .carousel-labels .carousel-label:nth-child(1) label span{
 	background-color: #000;
@@ -83,6 +84,7 @@ p{
 #slide2:checked ~ .carousel-items .slide2 {
 	order: 1;
     width: 100%;
+	color: #fff;
 }
 #slide2:checked ~ .carousel-labels .carousel-label:nth-child(2) label span{
 	background-color: #000;
@@ -98,6 +100,7 @@ p{
 #slide3:checked ~ .carousel-items .slide3 {
 	order: 1;
     width: 100%;
+	color: #fff;
 }
 #slide3:checked ~ .carousel-labels .carousel-label:nth-child(3) label span{
 	background-color: #000;
@@ -113,6 +116,7 @@ p{
 #slide4:checked ~ .carousel-items .slide4 {
 	order: 1;
     width: 100%;
+	color: #fff;
 }
 #slide4:checked ~ .carousel-labels .carousel-label:nth-child(4) label span{
 	background-color: #000;
@@ -128,6 +132,7 @@ p{
 #slide5:checked ~ .carousel-items .slide5 {
 	order: 1;
     width: 100%;
+	color: #fff;
 }
 #slide5:checked ~ .carousel-labels .carousel-label:nth-child(5) label span{
 	background-color: #000;
@@ -179,5 +184,15 @@ p{
 	}
 	p{
 		padding-top: 4.375rem;
+	}
+}
+
+@media screen and (max-width: 416px) {
+	p{
+		padding-top: 3.75rem;
+		font-size: 0.925rem;
+	}
+	.carousel-labels{
+		margin: -5.875rem 0 6.25rem 0;
 	}
 }
