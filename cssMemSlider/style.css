@@ -1,0 +1,209 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+img{
+	width: 100%;
+	height: auto;
+	border-radius: 0.625rem;
+}
+p{
+	padding-top: 1.25rem;
+	font-size: 1.25rem;
+}
+.link{
+	padding-bottom: 1rem;
+	text-align: right;
+}
+.link a{
+	color: #4d7edd;
+	text-decoration: none;
+}
+.link a:hover{
+	color: #fff;
+}
+.carousel-items, .carousel-labels {
+	margin: 0 auto;
+	padding: 0;
+	list-style: none;
+	display: block;
+}
+.carousel-wrapper {
+    width: 60%;
+	background-color: #000;
+	overflow: hidden;
+	margin: 0 auto;
+	padding: 2rem 3rem;
+}
+.carousel-items {
+	overflow: hidden;
+}
+.carousel-items>div{
+	display: flex;
+} 
+.carousel-items .slide{
+	width: 0;
+	color: transparent;
+}
+.carousel-labels {
+	height: 1.25rem;
+	padding: 0.625rem 0;
+	text-align: right;
+    margin-top: -3.75rem;
+}
+.carousel-selector {
+	display: none;
+}
+.carousel-label {
+	display: inline-block;
+}
+.carousel-label label{
+	padding: 0.5rem;
+	display: block;
+	cursor: pointer;
+}
+.carousel-label label span{
+	display: block;
+	width: 0.625rem;
+	height: 0.625rem;
+	border-radius: 0.625rem;
+	background-color: #4d7edd;
+	border: 0.1875rem solid #4d7edd;
+	display: block;
+	cursor: pointer;
+}
+
+#slide1:checked ~ .carousel-items>div{
+	animation: tr1 1s linear;
+}
+#slide1:checked ~ .carousel-items .slide1 {
+	order: 1;
+    width: 100%;
+	color: #fff;
+}
+#slide1:checked ~ .carousel-labels .carousel-label:nth-child(1) label span{
+	background-color: #000;
+	border-color: #4d7edd;
+}
+#slide1:checked ~ .carousel-labels .carousel-label:nth-child(1) label:hover span{
+	background-color: #000;
+	border-color: #fff;
+}
+#slide2:checked ~ .carousel-items>div{
+	animation: tr2 1s linear;
+}
+#slide2:checked ~ .carousel-items .slide2 {
+	order: 1;
+    width: 100%;
+	color: #fff;
+}
+#slide2:checked ~ .carousel-labels .carousel-label:nth-child(2) label span{
+	background-color: #000;
+	border-color: #4d7edd;
+}
+#slide2:checked ~ .carousel-labels .carousel-label:nth-child(2) label:hover span{
+	background-color: #000;
+	border-color: #fff;
+}
+#slide3:checked ~ .carousel-items>div{
+	animation: tr3 1s linear;
+}
+#slide3:checked ~ .carousel-items .slide3 {
+	order: 1;
+    width: 100%;
+	color: #fff;
+}
+#slide3:checked ~ .carousel-labels .carousel-label:nth-child(3) label span{
+	background-color: #000;
+	border-color: #4d7edd;
+}
+#slide3:checked ~ .carousel-labels .carousel-label:nth-child(3) label:hover span{
+	background-color: #000;
+	border-color: #fff;
+}
+#slide4:checked ~ .carousel-items>div{
+	animation: tr4 1s linear;
+}
+#slide4:checked ~ .carousel-items .slide4 {
+	order: 1;
+    width: 100%;
+	color: #fff;
+}
+#slide4:checked ~ .carousel-labels .carousel-label:nth-child(4) label span{
+	background-color: #000;
+	border-color: #4d7edd;
+}
+#slide4:checked ~ .carousel-labels .carousel-label:nth-child(4) label:hover span{
+	background-color: #000;
+	border-color: #fff;
+}
+#slide5:checked ~ .carousel-items>div{
+	animation: tr5 1s linear;
+}
+#slide5:checked ~ .carousel-items .slide5 {
+	order: 1;
+    width: 100%;
+	color: #fff;
+}
+#slide5:checked ~ .carousel-labels .carousel-label:nth-child(5) label span{
+	background-color: #000;
+	border-color: #4d7edd;
+}
+#slide5:checked ~ .carousel-labels .carousel-label:nth-child(5) label:hover span{
+	background-color: #000;
+	border-color: #fff;
+}
+.carousel-label label:hover span{
+	background-color: #fff;
+	border-color: #fff;
+	cursor: pointer;
+}
+
+@keyframes tr1{
+0% {transform: translate(10%);}
+100% {transform: translate(0);}
+}
+@keyframes tr2{
+0% {transform: translate(10%);}
+100% {transform: translate(0);}
+}
+@keyframes tr3{
+0% {transform: translate(10%);}
+100% {transform: translate(0);}
+}
+@keyframes tr4{
+0% {transform: translate(10%);}
+100% {transform: translate(0);}
+}
+@keyframes tr5{
+0% {transform: translate(10%);}
+100% {transform: translate(0);}
+}
+
+@media screen and (max-width: 900px) {
+	.carousel-wrapper {
+		width: 100%;
+		box-sizing: border-box;
+	}
+	img{
+		width: 100%;
+		height: auto;
+	}
+	.carousel-labels{
+		text-align: center;
+		margin: -6.875rem 0 6.25rem 0;
+	}
+	p{
+		padding-top: 4.375rem;
+	}
+}
+
+@media screen and (max-width: 416px) {
+	p{
+		padding-top: 3.75rem;
+		font-size: 0.925rem;
+	}
+	.carousel-labels{
+		margin: -5.875rem 0 6.25rem 0;
+	}
+}
