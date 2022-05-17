@@ -11,6 +11,17 @@ p{
 	padding-top: 1.25rem;
 	font-size: 1.25rem;
 }
+.link{
+	padding-bottom: 1rem;
+	text-align: right;
+}
+.link a{
+	color: #4d7edd;
+	text-decoration: none;
+}
+.link a:hover{
+	color: #fff;
+}
 .carousel-items, .carousel-labels {
 	margin: 0 auto;
 	padding: 0;
